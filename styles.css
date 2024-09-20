@@ -1,6 +1,8 @@
 @font-face {
     font-family: "HabboFont";
-    src: url("assets/volter__28Goldfish_29.ttf");
+    src: 
+        url("assets/volterGoldfish.woff2") format("woff2"),
+        url("assets/volterGoldfish.ttf") format("truetype");
 }
 
 body {
