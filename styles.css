@@ -1,0 +1,732 @@
+@font-face {
+    font-family: "HabboFont";
+    src: url("assets/volter__28Goldfish_29.ttf");
+}
+
+body {
+    background: url("assets/originsarmy.png");
+    margin-top: 0;
+    display: flex;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.375rem;
+}
+
+p, ul {
+    font-size: .875rem;;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+.pixel-corners,
+.pixel-corners--wrapper {
+    clip-path: polygon(0px calc(100% - 11px),
+    1px calc(100% - 11px),
+    1px calc(100% - 9px),
+    2px calc(100% - 9px),
+    2px calc(100% - 8px),
+    2px calc(100% - 7px),
+    3px calc(100% - 7px),
+    3px calc(100% - 6px),
+    4px calc(100% - 6px),
+    4px calc(100% - 5px),
+    5px calc(100% - 4px),
+    6px calc(100% - 4px),
+    6px calc(100% - 3px),
+    7px calc(100% - 3px),
+    7px calc(100% - 2px),
+    8px calc(100% - 2px),
+    9px calc(100% - 2px),
+    9px calc(100% - 1px),
+    11px calc(100% - 1px),
+    11px 100%,
+    calc(100% - 11px) 100%,
+    calc(100% - 11px) calc(100% - 1px),
+    calc(100% - 9px) calc(100% - 1px),
+    calc(100% - 9px) calc(100% - 2px),
+    calc(100% - 8px) calc(100% - 2px),
+    calc(100% - 7px) calc(100% - 2px),
+    calc(100% - 7px) calc(100% - 3px),
+    calc(100% - 6px) calc(100% - 3px),
+    calc(100% - 6px) calc(100% - 4px),
+    calc(100% - 5px) calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 5px),
+    calc(100% - 4px) calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 7px),
+    calc(100% - 2px) calc(100% - 7px),
+    calc(100% - 2px) calc(100% - 8px),
+    calc(100% - 2px) calc(100% - 9px),
+    calc(100% - 1px) calc(100% - 9px),
+    calc(100% - 1px) calc(100% - 11px),
+    100% calc(100% - 11px),
+    100% 11px,
+    calc(100% - 1px) 11px,
+    calc(100% - 1px) 9px,
+    calc(100% - 2px) 9px,
+    calc(100% - 2px) 8px,
+    calc(100% - 2px) 7px,
+    calc(100% - 3px) 7px,
+    calc(100% - 3px) 6px,
+    calc(100% - 4px) 6px,
+    calc(100% - 4px) 5px,
+    calc(100% - 5px) 4px,
+    calc(100% - 6px) 4px,
+    calc(100% - 6px) 3px,
+    calc(100% - 7px) 3px,
+    calc(100% - 7px) 2px,
+    calc(100% - 8px) 2px,
+    calc(100% - 9px) 2px,
+    calc(100% - 9px) 1px,
+    calc(100% - 11px) 1px,
+    calc(100% - 11px) 0px,
+    11px 0px,
+    11px 1px,
+    9px 1px,
+    9px 2px,
+    8px 2px,
+    7px 2px,
+    7px 3px,
+    6px 3px,
+    6px 4px,
+    5px 4px,
+    4px 5px,
+    4px 6px,
+    3px 6px,
+    3px 7px,
+    2px 7px,
+    2px 8px,
+    2px 9px,
+    1px 9px,
+    1px 11px,
+    0px 11px);
+    position: relative;
+}
+
+.pixel-corners {
+    border: 1px solid transparent;
+}
+
+.pixel-corners--wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+
+.pixel-corners--wrapper .pixel-corners {
+    display: block;
+    clip-path: polygon(1px 11px,
+    2px 11px,
+    2px 9px,
+    3px 9px,
+    3px 8px,
+    3px 7px,
+    4px 7px,
+    4px 6px,
+    5px 6px,
+    5px 5px,
+    6px 5px,
+    6px 4px,
+    7px 4px,
+    7px 3px,
+    8px 3px,
+    9px 3px,
+    9px 2px,
+    11px 2px,
+    11px 1px,
+    calc(100% - 11px) 1px,
+    calc(100% - 11px) 2px,
+    calc(100% - 9px) 2px,
+    calc(100% - 9px) 3px,
+    calc(100% - 8px) 3px,
+    calc(100% - 7px) 3px,
+    calc(100% - 7px) 4px,
+    calc(100% - 6px) 4px,
+    calc(100% - 6px) 5px,
+    calc(100% - 5px) 5px,
+    calc(100% - 5px) 6px,
+    calc(100% - 4px) 6px,
+    calc(100% - 4px) 7px,
+    calc(100% - 3px) 7px,
+    calc(100% - 3px) 8px,
+    calc(100% - 3px) 9px,
+    calc(100% - 2px) 9px,
+    calc(100% - 2px) 11px,
+    calc(100% - 1px) 11px,
+    calc(100% - 1px) calc(100% - 11px),
+    calc(100% - 2px) calc(100% - 11px),
+    calc(100% - 2px) calc(100% - 9px),
+    calc(100% - 3px) calc(100% - 9px),
+    calc(100% - 3px) calc(100% - 8px),
+    calc(100% - 3px) calc(100% - 7px),
+    calc(100% - 4px) calc(100% - 7px),
+    calc(100% - 4px) calc(100% - 6px),
+    calc(100% - 5px) calc(100% - 6px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 6px) calc(100% - 5px),
+    calc(100% - 6px) calc(100% - 4px),
+    calc(100% - 7px) calc(100% - 4px),
+    calc(100% - 7px) calc(100% - 3px),
+    calc(100% - 8px) calc(100% - 3px),
+    calc(100% - 9px) calc(100% - 3px),
+    calc(100% - 9px) calc(100% - 2px),
+    calc(100% - 11px) calc(100% - 2px),
+    calc(100% - 11px) calc(100% - 1px),
+    11px calc(100% - 1px),
+    11px calc(100% - 2px),
+    9px calc(100% - 2px),
+    9px calc(100% - 3px),
+    8px calc(100% - 3px),
+    7px calc(100% - 3px),
+    7px calc(100% - 4px),
+    6px calc(100% - 4px),
+    6px calc(100% - 5px),
+    5px calc(100% - 5px),
+    5px calc(100% - 6px),
+    4px calc(100% - 6px),
+    4px calc(100% - 7px),
+    3px calc(100% - 7px),
+    3px calc(100% - 8px),
+    3px calc(100% - 9px),
+    2px calc(100% - 9px),
+    2px calc(100% - 11px),
+    1px calc(100% - 11px));
+}
+
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(0px calc(100% - 11px),
+    1px calc(100% - 11px),
+    1px calc(100% - 9px),
+    2px calc(100% - 9px),
+    2px calc(100% - 8px),
+    2px calc(100% - 7px),
+    3px calc(100% - 7px),
+    3px calc(100% - 6px),
+    4px calc(100% - 6px),
+    4px calc(100% - 5px),
+    5px calc(100% - 4px),
+    6px calc(100% - 4px),
+    6px calc(100% - 3px),
+    7px calc(100% - 3px),
+    7px calc(100% - 2px),
+    8px calc(100% - 2px),
+    9px calc(100% - 2px),
+    9px calc(100% - 1px),
+    11px calc(100% - 1px),
+    11px 100%,
+    calc(100% - 11px) 100%,
+    calc(100% - 11px) calc(100% - 1px),
+    calc(100% - 9px) calc(100% - 1px),
+    calc(100% - 9px) calc(100% - 2px),
+    calc(100% - 8px) calc(100% - 2px),
+    calc(100% - 7px) calc(100% - 2px),
+    calc(100% - 7px) calc(100% - 3px),
+    calc(100% - 6px) calc(100% - 3px),
+    calc(100% - 6px) calc(100% - 4px),
+    calc(100% - 5px) calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 5px),
+    calc(100% - 4px) calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 7px),
+    calc(100% - 2px) calc(100% - 7px),
+    calc(100% - 2px) calc(100% - 8px),
+    calc(100% - 2px) calc(100% - 9px),
+    calc(100% - 1px) calc(100% - 9px),
+    calc(100% - 1px) calc(100% - 11px),
+    100% calc(100% - 11px),
+    100% 11px,
+    calc(100% - 1px) 11px,
+    calc(100% - 1px) 9px,
+    calc(100% - 2px) 9px,
+    calc(100% - 2px) 8px,
+    calc(100% - 2px) 7px,
+    calc(100% - 3px) 7px,
+    calc(100% - 3px) 6px,
+    calc(100% - 4px) 6px,
+    calc(100% - 4px) 5px,
+    calc(100% - 5px) 4px,
+    calc(100% - 6px) 4px,
+    calc(100% - 6px) 3px,
+    calc(100% - 7px) 3px,
+    calc(100% - 7px) 2px,
+    calc(100% - 8px) 2px,
+    calc(100% - 9px) 2px,
+    calc(100% - 9px) 1px,
+    calc(100% - 11px) 1px,
+    calc(100% - 11px) 0px,
+    11px 0px,
+    11px 1px,
+    9px 1px,
+    9px 2px,
+    8px 2px,
+    7px 2px,
+    7px 3px,
+    6px 3px,
+    6px 4px,
+    5px 4px,
+    4px 5px,
+    4px 6px,
+    3px 6px,
+    3px 7px,
+    2px 7px,
+    2px 8px,
+    2px 9px,
+    1px 9px,
+    1px 11px,
+    0px 11px,
+    0px 50%,
+    1px 50%,
+    1px 11px,
+    2px 11px,
+    2px 9px,
+    3px 9px,
+    3px 8px,
+    3px 7px,
+    4px 7px,
+    4px 6px,
+    5px 6px,
+    5px 5px,
+    6px 5px,
+    6px 4px,
+    7px 4px,
+    7px 3px,
+    8px 3px,
+    9px 3px,
+    9px 2px,
+    11px 2px,
+    11px 1px,
+    calc(100% - 11px) 1px,
+    calc(100% - 11px) 2px,
+    calc(100% - 9px) 2px,
+    calc(100% - 9px) 3px,
+    calc(100% - 8px) 3px,
+    calc(100% - 7px) 3px,
+    calc(100% - 7px) 4px,
+    calc(100% - 6px) 4px,
+    calc(100% - 6px) 5px,
+    calc(100% - 5px) 5px,
+    calc(100% - 5px) 6px,
+    calc(100% - 4px) 6px,
+    calc(100% - 4px) 7px,
+    calc(100% - 3px) 7px,
+    calc(100% - 3px) 8px,
+    calc(100% - 3px) 9px,
+    calc(100% - 2px) 9px,
+    calc(100% - 2px) 11px,
+    calc(100% - 1px) 11px,
+    calc(100% - 1px) calc(100% - 11px),
+    calc(100% - 2px) calc(100% - 11px),
+    calc(100% - 2px) calc(100% - 9px),
+    calc(100% - 3px) calc(100% - 9px),
+    calc(100% - 3px) calc(100% - 8px),
+    calc(100% - 3px) calc(100% - 7px),
+    calc(100% - 4px) calc(100% - 7px),
+    calc(100% - 4px) calc(100% - 6px),
+    calc(100% - 5px) calc(100% - 6px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 6px) calc(100% - 5px),
+    calc(100% - 6px) calc(100% - 4px),
+    calc(100% - 7px) calc(100% - 4px),
+    calc(100% - 7px) calc(100% - 3px),
+    calc(100% - 8px) calc(100% - 3px),
+    calc(100% - 9px) calc(100% - 3px),
+    calc(100% - 9px) calc(100% - 2px),
+    calc(100% - 11px) calc(100% - 2px),
+    calc(100% - 11px) calc(100% - 1px),
+    11px calc(100% - 1px),
+    11px calc(100% - 2px),
+    9px calc(100% - 2px),
+    9px calc(100% - 3px),
+    8px calc(100% - 3px),
+    7px calc(100% - 3px),
+    7px calc(100% - 4px),
+    6px calc(100% - 4px),
+    6px calc(100% - 5px),
+    5px calc(100% - 5px),
+    5px calc(100% - 6px),
+    4px calc(100% - 6px),
+    4px calc(100% - 7px),
+    3px calc(100% - 7px),
+    3px calc(100% - 8px),
+    3px calc(100% - 9px),
+    2px calc(100% - 9px),
+    2px calc(100% - 11px),
+    1px calc(100% - 11px),
+    1px 50%,
+    0px 50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    display: block;
+    pointer-events: none;
+}
+
+.pixel-corners::after {
+    margin: -1px;
+}
+
+.centre {
+    height: 100%;
+    width: 70%;
+    margin-top: 130px; /*167px*/
+}
+
+.centrePanel {
+    min-height: 100px;
+    background-color: #e59e0f;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrePanel.active {
+    display: flex;
+}
+
+.centrePanel .content {
+    padding: 1%;
+    width: 98%;
+}
+
+.centreContent {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.leftColumn, .rightColumn {
+    width: 48%;
+    padding: 1%;
+}
+
+.secondPanel {
+    background-color: #f2d673;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 13px;
+}
+
+.yellow {
+    background-color: #f2d673;
+}
+
+.beige {
+    background-color: #d8c38c;
+}
+
+.funkyFriday {
+    background-color: #d8c38c;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.banner {
+    background-color: #ffffcc;
+    width: 98%;
+    margin-top: 1%;
+}
+
+.bannerContainer {
+    display: flex;
+    overflow: scroll hidden;
+}
+
+.slideshow {
+    margin: 2px;
+    max-height: 130px;
+    max-width: 215px;
+}
+
+.navigation {
+
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 2;
+    font-family: HabboFont, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.navigation-item {
+    margin: 0 4px;
+    background-color: #cb8a2f;
+    padding: 6px 24px;
+    cursor: pointer;
+    border-bottom: 1px solid black !important;
+}
+
+.navigation-item.active {
+    background-color: #e59e0f;
+    border-bottom: 1px solid #e59e0f !important;
+}
+
+.left {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    transform: scale(50%);
+    transform-origin: top left;
+}
+
+.left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right {
+    width: 15%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    color: #e1e8b2;
+    font-family: HabboFont, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+}
+
+.habboFont {
+    font-family: HabboFont, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.nav-corners,
+.nav-corners--wrapper {
+    clip-path: polygon(0px 100%,
+    100% 100%,
+    100% calc(100% - 7px),
+    100% 7px,
+    calc(100% - 1px) 7px,
+    calc(100% - 1px) 5px,
+    calc(100% - 2px) 5px,
+    calc(100% - 2px) 3px,
+    calc(100% - 3px) 3px,
+    calc(100% - 3px) 2px,
+    calc(100% - 5px) 2px,
+    calc(100% - 5px) 1px,
+    calc(100% - 7px) 1px,
+    calc(100% - 7px) 0px,
+    7px 0px,
+    7px 1px,
+    5px 1px,
+    5px 2px,
+    3px 2px,
+    3px 3px,
+    2px 3px,
+    2px 5px,
+    1px 5px,
+    1px 7px,
+    0px 7px);
+    position: relative;
+}
+
+.nav-corners {
+    border: 1px solid transparent;
+}
+
+.nav-corners--wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-corners--wrapper .nav-corners {
+    display: block;
+    clip-path: polygon(1px 7px,
+    2px 7px,
+    2px 5px,
+    3px 5px,
+    3px 3px,
+    5px 3px,
+    5px 2px,
+    7px 2px,
+    7px 1px,
+    calc(100% - 7px) 1px,
+    calc(100% - 7px) 2px,
+    calc(100% - 5px) 2px,
+    calc(100% - 5px) 3px,
+    calc(100% - 3px) 3px,
+    calc(100% - 3px) 5px,
+    calc(100% - 2px) 5px,
+    calc(100% - 2px) 7px,
+    calc(100% - 1px) 7px,
+    calc(100% - 1px) calc(100% - 7px),
+    calc(100% - 2px) calc(100% - 7px),
+    calc(100% - 2px) calc(100% - 5px),
+    calc(100% - 3px) calc(100% - 5px),
+    calc(100% - 3px) calc(100% - 3px),
+    calc(100% - 5px) calc(100% - 3px),
+    calc(100% - 5px) calc(100% - 2px),
+    calc(100% - 7px) calc(100% - 2px),
+    calc(100% - 7px) calc(100% - 1px),
+    7px calc(100% - 1px),
+    7px calc(100% - 2px),
+    5px calc(100% - 2px),
+    5px calc(100% - 3px),
+    3px calc(100% - 3px),
+    3px calc(100% - 5px),
+    2px calc(100% - 5px),
+    2px calc(100% - 7px),
+    1px calc(100% - 7px));
+}
+
+.nav-corners::after,
+.nav-corners--wrapper::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(
+        /* bottom left */ 0px 100%,
+                /* bottom right */ 100% 100%,
+                /* top right */ 100% 7px,
+            calc(100% - 1px) 7px,
+            calc(100% - 1px) 5px,
+            calc(100% - 2px) 5px,
+            calc(100% - 2px) 3px,
+            calc(100% - 3px) 3px,
+            calc(100% - 3px) 2px,
+            calc(100% - 5px) 2px,
+            calc(100% - 5px) 1px,
+            calc(100% - 7px) 1px,
+            calc(100% - 7px) 0px,
+                /* top left */ 7px 0px,
+            7px 1px,
+            5px 1px,
+            5px 2px,
+            3px 2px,
+            3px 3px,
+            2px 3px,
+            2px 5px,
+            1px 5px,
+            1px 7px,
+            0px 7px,
+            0px 50%,
+                /* cut inside here? */ 1px 50%,
+            1px 7px,
+            2px 7px,
+            2px 5px,
+            3px 5px,
+            3px 3px,
+            5px 3px,
+            5px 2px,
+            7px 2px,
+            7px 1px,
+                /* top right inside */ calc(100% - 7px) 1px,
+            calc(100% - 7px) 2px,
+            calc(100% - 5px) 2px,
+            calc(100% - 5px) 3px,
+            calc(100% - 3px) 3px,
+            calc(100% - 3px) 5px,
+            calc(100% - 2px) 5px,
+            calc(100% - 2px) 7px,
+            calc(100% - 1px) 7px,
+                /* bottom right inside */ calc(100% - 1px) 100%,
+                /* bottom left inside */ 1px 100%,
+            1px 50%,
+            0px 50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    display: block;
+    pointer-events: none;
+}
+
+.nav-corners::after {
+    margin: -1px;
+}
+
+.pixel-img {
+    transform: scale(50%);
+    transform-origin: center left;
+}
+
+.uniform-container {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.uniform-container img {
+    width: 12.5%;
+    height: auto;
+    padding: 5%;
+}
+
+.img-container {
+    max-height:200px;
+    width: 50%;
+}
+
+.uniform-img {
+    transform: scale(50%);
+    transform-origin: center center;
+}
+
+@media (width <= 1000px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .centre {
+        width: 98%;
+        margin-top: -160px;
+    }
+    
+    .centreContent {
+        flex-direction: column;
+    }
+    
+    .leftColumn, .rightColumn {
+        width: 98%;
+    }
+    
+    .navigation-item {
+        margin: 0 2px;
+        padding: 6px;
+    }
+    
+    .left {
+        width: unset;
+    }
+    
+    .left img {
+        position: unset;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
