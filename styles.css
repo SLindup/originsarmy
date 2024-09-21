@@ -13,7 +13,6 @@ body {
 }
 
 h1 {
-    color: #ffffff;
     font-weight: bold;
     font-size: 1.375rem;
 }
@@ -704,10 +703,17 @@ a:visited {
     
     .centreContent {
         flex-direction: column;
+        width: 94%;
+    }
+    
+    .singleColumn {
+        width: 96%;
+        padding: 2%;
     }
     
     .leftColumn, .rightColumn {
-        width: 98%;
+        width: 96%;
+        padding: 2%;
     }
     
     .navigation-item {
